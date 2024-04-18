@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <h2>Formulario de registro</h2>
+    <form action="mailto:agusalbo2024@gmail.com" method="post" target="_blank" enctype="text/plain">
+        <div>
+            <label for="NombreId">Nombre:</label>
+            <input type="text" placeholder="Nombre" id="NombreId" required>
+        </div>
+        <div>
+            <label for="ApellidoId">Apellido:</label>
+            <input type="text" placeholder="Nombre" id="Apellido" required>
+        </div>
+        <div>
+            <label for="EmailId">Email:</label>
+            <input type="email" placeholder="Email" id="EmailId" required>
+        </div>
+        <div>
+            <label for="PaisId">Pais:</label>
+            <select name="Pais" id="PaisId">
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Uruguay">Uruguay</option>
+            </select>
+        </div>
+        <div>
+            <legend>Sexo:</legend>
+
+            <label for="M">M</label>
+            <input type="radio" name="sexo" id="M" value="M">
+
+            <label for="F">F</label>
+            <input type="radio" name="sexo" id="F" value="F">
+
+        </div>
+        <div>
+            <label for="TextoLibreId">Texto libre:</label>
+            <textarea placeholder="TextoLibre" id="TextoLibreId" rows="20" cols="50"></textarea>
+        </div>
+        <button type="submit">Registrar</button>
+        <button onclick="window.location.href='./index.html'">Cancelar</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+
+</html>
