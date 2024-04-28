@@ -1,0 +1,109 @@
+.site-header {
+    background-color: #0047AB;
+    color: #FFF;
+    padding: 20px;
+}
+
+.site-title {
+    margin: 0;
+}
+
+.site-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.site-nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.latest-news,
+.recent-results,
+.upcoming-events {
+    margin-bottom: 20px;
+}
+
+.latest-news h2,
+.recent-results h2,
+.upcoming-events h2 {
+    color: #0047AB;
+}
+
+.news-article,
+.result-article,
+.event-article {
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 20px;
+}
+
+.news-article h3,
+.result-article h3,
+.event-article h3 {
+    margin-top: 0;
+}
+
+time {
+    color: #777;
+}
+
+.site-footer {
+    background-color: #0047AB;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-header .site-title {
+    font-size: 24px;
+}
+
+.site-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.latest-news article:first-child,
+.recent-results article:first-child,
+.upcoming-events article:first-child {
+    border-top: 1px solid #DDD;
+    padding-top: 20px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+.result-article div {
+    margin-bottom: 10px;
+}
+
+.result-article div ul {
+    margin: 0;
+    padding: 0;
+}
+
+.result-article div ul li {
+    list-style-type: none;
+}
+
+.result-article div ul li:first-child {
+    font-weight: bold;
+}
+
+.result-article div ul li a {
+    color: #0047AB;
+    text-decoration: none;
+}
+
+.result-article div ul li a:hover {
+    text-decoration: underline;
+}
