@@ -1,0 +1,152 @@
+.site-header {
+  background-color: #0047ab;
+  color: #fff;
+  padding: 20px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: x-large;
+}
+
+.site-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.site-nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.site-nav ul li a {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.latest-news,
+.recent-results,
+.upcoming-events {
+  margin-bottom: 20px;
+}
+
+.latest-news h2,
+.recent-results h2,
+.upcoming-events h2 {
+  color: #0047ab;
+}
+
+.news-article,
+.result-article,
+.event-article {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.news-article h3,
+.result-article h3,
+.event-article h3 {
+  margin-top: 0;
+}
+
+time {
+  color: #777;
+}
+
+.site-footer {
+  background-color: #0047ab;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header .site-title {
+  font-size: 24px;
+}
+
+.site-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.latest-news article:first-child,
+.recent-results article:first-child,
+.upcoming-events article:first-child {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.result-article div {
+  margin-bottom: 10px;
+}
+
+.result-article div ul {
+  margin: 0;
+  padding: 0;
+}
+
+.result-article div ul li {
+  list-style-type: none;
+}
+
+.result-article div ul li:first-child {
+  font-weight: bold;
+}
+
+.result-article div ul li a {
+  color: #0047ab;
+  text-decoration: none;
+}
+
+.result-article div ul li a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 620px) {
+  .site-header {
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .site-header {
+    width: 100%;
+  }
+
+  .site-header nav {
+    width: 100%;
+  }
+
+  .site-header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px 0;
+  }
+
+  .site-header nav ul li {
+    width: 100%;
+    margin: auto;
+    border: 1px solid white;
+    text-align: center;
+  }
+}
