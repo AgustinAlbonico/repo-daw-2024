@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <header class="header">
+        <h1><a href="index.html">AlboNews</a></h1>
+        <img src="https://images.vexels.com/media/users/3/153807/isolated/lists/32e3ae0e21182a9539bf113fa5299f98-icono-de-trazo-de-color-de-edificios-de-oficinas.png" alt="Logo">
+   </header> 
+   <div class="menu">
+       <a href="#">Política</a>
+       <a href="#">Economía</a> 
+       <a href="#">Salud</a>
+       <a href="#">Sociedad</a>
+       <a href="#">Espectáculos</a>
+       <a href="#">Deportes</a>
+       <a href="form.html"><i>Registrate</i></a>
+   </div>
+
+    <main>
+        <section class="subscription-form">
+            <form id="subscriptionForm">
+                <div class="form-group">
+                    <label for="fullName">Nombre completo:</label>
+                    <input type="text" id="fullName" name="fullName">
+                    <span class="error" id="fullNameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password">
+                    <span class="error" id="passwordError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Repetir contraseña:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                    <span class="error" id="confirmPasswordError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="age">Edad:</label>
+                    <input type="number" id="age" name="age">
+                    <span class="error" id="ageError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone">
+                    <span class="error" id="phoneError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección:</label>
+                    <input type="text" id="address" name="address">
+                    <span class="error" id="addressError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="city">Ciudad:</label>
+                    <input type="text" id="city" name="city">
+                    <span class="error" id="cityError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="postalCode">Código Postal:</label>
+                    <input type="text" id="postalCode" name="postalCode">
+                    <span class="error" id="postalCodeError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni">
+                    <span class="error" id="dniError"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>Contactos del diario:</p>
+        <p>Numero: +5403471504576</p>
+        <p>Email: <a href="agusalbo2024@gmail.com">agusalbo2024@gmail.com</a></p>
+        <p>Dirección: Av. Ovidio Lagos 944, Rosario.</p>
+      </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
