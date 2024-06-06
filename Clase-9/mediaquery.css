@@ -1,0 +1,22 @@
+@media screen and (max-width: 600px){
+    .menu a{
+            display: none;
+
+        }
+    .menu-mobile{
+        display:block;
+        background-color: rgb(252, 189, 0);
+
+    }
+    .columna.costado, .columna.medio{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 1200px){
+    .columna.costado, .columna.medio{
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+
