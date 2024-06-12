@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suscripción</title>
+    <link rel="stylesheet" href="./estilos.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1><a href="index.html">AlboNews</a></h1>
+      <img
+        src="https://images.vexels.com/media/users/3/153807/isolated/lists/32e3ae0e21182a9539bf113fa5299f98-icono-de-trazo-de-color-de-edificios-de-oficinas.png"
+        alt="Logo"
+      />
+    </header>
+    <div class="menu">
+      <a href="#">Política</a>
+      <a href="#">Economía</a>
+      <a href="#">Salud</a>
+      <a href="#">Sociedad</a>
+      <a href="#">Espectáculos</a>
+      <a href="#">Deportes</a>
+      <a href="form.html"><i>Registrate</i></a>
+    </div>
+
+    <main>
+      <section class="subscription-form">
+        <form
+          id="formulario"
+          action="https://jsonplaceholder.typicode.com/users"
+          method="GET"
+        >
+            <legend><strong>Datos Usuario</strong></legend>
+            <div class="form-group">
+              <label for="nombre">Nombre completo:</label>
+              <input type="text" id="nombre" name="nombre" required />
+              <div id="nombreError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <div id="emailError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="contraseña">Contraseña:</label>
+              <input
+                type="password"
+                id="contraseña"
+                name="contraseña"
+                required
+              />
+              <div id="contraseñaError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="repContraseña">Repetir Contraseña:</label>
+              <input
+                type="password"
+                id="repContraseña"
+                name="repContraseña"
+                required
+              />
+              <div id="repContraseñaError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="edad">Edad:</label>
+              <input type="number" id="edad" name="edad" required />
+              <div id="edadError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono:</label>
+              <input
+                placeholder="Opcional"
+                type="tel"
+                id="telefono"
+                name="telefono"
+              />
+              <div id="telefonoError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="direccion">Dirección:</label>
+              <input type="text" id="direccion" name="direccion" required />
+              <div id="direccionError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="ciudad">Ciudad:</label>
+              <input type="text" id="ciudad" name="ciudad" required />
+              <div id="ciudadError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="codigoPostal">Código Postal:</label>
+              <input
+                type="text"
+                id="codigoPostal"
+                name="codigoPostal"
+                required
+              />
+              <div id="codigoPostalError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+              <label for="dni">DNI:</label>
+              <input type="text" id="dni" name="dni" required />
+              <div id="dniError" class="error-message"></div>
+            </div>
+
+            <div class="button-group">
+              <button type="submit">Enviar</button>
+              <a href="index.html">
+                <button type="button">Cancelar</button>
+              </a>
+            </div>
+        </form>
+      </section>
+    </main>
+
+    <div class="footer">
+      <p>Contactos del diario:</p>
+      <p>Numero: +5403471504576</p>
+      <p>Email: <a href="agusalbo2024@gmail.com">agusalbo2024@gmail.com</a></p>
+      <p>Dirección: Av. Ovidio Lagos 944, Rosario.</p>
+    </div>
+
+    <!-- Modales para los mensajes de éxito y error -->
+    <div id="modalError" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalError">&times;</span>
+        <!-- &times = a símbolo de cerrar -->
+        <p id="modalErrorMessage"></p>
+      </div>
+    </div>
+
+    <div id="modalSuccess" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalSuccess">&times;</span>
+        <p id="modalSuccessMessage"></p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
